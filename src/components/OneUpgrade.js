@@ -1,5 +1,11 @@
 import { useState } from "react";
-function OneUpgrade({ oneUpgrade, upgradeInvest, money, setMoney }) {
+function OneUpgrade({
+  oneUpgrade,
+  upgradeInvest,
+  upgradeIncome,
+  money,
+  setMoney,
+}) {
   const [situation, setSituation] = useState(0);
 
   const usedUpgrade = () => {
@@ -14,6 +20,7 @@ function OneUpgrade({ oneUpgrade, upgradeInvest, money, setMoney }) {
         className="btnUpgrade"
         onClick={() => {
           upgradeInvest(oneUpgrade.power);
+          upgradeIncome(oneUpgrade.passive);
           usedUpgrade();
           setMoney(money - oneUpgrade.price);
         }}

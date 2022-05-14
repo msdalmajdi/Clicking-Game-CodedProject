@@ -3,6 +3,8 @@ function Upgrades({
   upgradesInfo,
   multiplier,
   setMultiplier,
+  income,
+  setIncome,
   money,
   setMoney,
 }) {
@@ -11,12 +13,18 @@ function Upgrades({
     setMultiplier(newMultiplier);
   };
 
+  const upgradeIncome = (power) => {
+    let newIncome = income + power;
+    setIncome(newIncome);
+  };
+
   const availableUpgrades = upgradesInfo
     .filter((oneUpgrade) => !oneUpgrade.used && oneUpgrade.price <= money)
     .map((oneUpgrade) => (
       <OneUpgrade
         oneUpgrade={oneUpgrade}
         upgradeInvest={upgradeInvest}
+        upgradeIncome={upgradeIncome}
         money={money}
         setMoney={setMoney}
       />

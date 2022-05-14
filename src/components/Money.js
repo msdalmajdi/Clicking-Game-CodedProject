@@ -1,7 +1,8 @@
+import Number from "./Number";
 function Money({ money }) {
   return (
     <div className="money">
-      $<span className="money-amount">{money}</span>
+      $<Number money={money} />
     </div>
   );
 }
