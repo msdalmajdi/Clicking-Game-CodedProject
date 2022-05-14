@@ -6,6 +6,7 @@ import Upgrades from "./components/Upgrades";
 import Perks from "./components/Perks";
 import { useState } from "react";
 import { useEffect } from "react";
+import React from "react";
 import upgradesInfo from "./data/upgradesInfo";
 function App() {
   const [money, setMoney] = useState(0);

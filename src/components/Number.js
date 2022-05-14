@@ -1,10 +1,9 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import NumberEasing from "react-number-easing";
 function Number({ money }) {
   return (
-    <span id="haha" className={numberClass}>
-      {money}
-    </span>
+    <div className="money-amount">
+      <NumberEasing value={money} speed={666} decimals={0} ease="quintOut" />
+    </div>
   );
 }
 export default Number;

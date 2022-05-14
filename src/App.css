@@ -86,16 +86,12 @@ body{
   align-items: center;
 
   padding-top: 4rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-shadow:  1px 13px 5px #A7C7B1;
 }
 .money-amount {
-  background-color: red;
-}
-.money-amount-trans{
-  color:blue;
-  background-color: green;
-}
 
+}
 /* Money Component End*/
 
 /* Button Component Start*/
