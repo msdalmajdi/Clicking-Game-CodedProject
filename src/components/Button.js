@@ -2,7 +2,7 @@ function Button({ investing }) {
   return (
     <div className="button">
       <button className="btnInvest" onClick={investing}>
-        Invest
+        Sell
       </button>
     </div>
   );

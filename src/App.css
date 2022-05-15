@@ -54,6 +54,7 @@ body{
   font-size: 4rem;
   background-color: #A7C7B1;
   border-bottom: black 1px solid;
+  padding-bottom: 1rem;
 }
 
 /* Header Component End*/
@@ -167,7 +168,7 @@ example 6 by sketch
 .btnUpgrade {
 
   align-items: center;
-  background-color: #5b8db9;
+  background-color: #A7C7B1;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -224,12 +225,12 @@ width:33%;
 .btnPerk {
 
   align-items: center;
-  background-color: #5b8db9;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #A7C7B1;
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.85);
   display: inline-flex;
   font-size:16px;
   font-family: 'Kumbh Sans', sans-serif;
@@ -250,3 +251,34 @@ width:33%;
 
 
 /* Perks Btn End */
+
+/* OneAchievement Btn Start*/
+
+.btn-achievment {
+
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #282c34;
+  display: inline-flex;
+  font-size:24px;
+  font-weight: bold;
+  font-family: 'Kumbh Sans', sans-serif;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 1rem;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 32rem;
+}
+/* OneAchievement Btn End*/

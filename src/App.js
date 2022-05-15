@@ -8,6 +8,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import React from "react";
 import upgradesInfo from "./data/upgradesInfo";
+import achievementsInfo from "./data/achievementsInfo";
+import Achievements from "./components/Achievements";
 function App() {
   const [money, setMoney] = useState(0);
   const [multiplier, setMultiplier] = useState(1);
@@ -48,7 +50,8 @@ function App() {
           <Money money={money} />
           <Button investing={investing} />
           <div>Money Per Click {multiplier}</div>
-          <div>Money per Second {income}</div>
+          <div>Money Per Second {income}</div>
+          <Achievements money={money} achievementsInfo={achievementsInfo} />
         </div>
         <Perks upgradesInfo={upgradesInfo} />
       </div>
