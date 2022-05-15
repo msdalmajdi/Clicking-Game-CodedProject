@@ -1,9 +1,10 @@
 import { useState } from "react";
-function OneAchievement({ oneAchievement }) {
+function OneAchievement({ oneAchievement, achievementsInfo }) {
   const [situation, setSituation] = useState(0);
 
   const achieving = () => {
-    oneAchievement.achieved = true;
+    //oneAchievement.achieved = true;
+    achievementsInfo[achievementsInfo.indexOf(oneAchievement)].achieved = true;
     setSituation(1);
   };
 
